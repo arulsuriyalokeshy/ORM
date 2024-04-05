@@ -23,6 +23,7 @@ Enter the code for admin.py and models.py
 Execute Django admin and create details for 10 books
 
 ## PROGRAM
+'''
 admin.py
 from django.contrib import admin
 from .models import game
@@ -37,11 +38,11 @@ class game(models.Model):
     gamename= models.CharField(max_length=20)
     gamelevel = models.CharField(max_length=20)
     gamescore = models.CharField(max_length=20)
-
+'''
 
 ## OUTPUT
 
-![output](./web map.png)
+![output](./webmap.png)
 ![output](./web.png)
 ![output](./web1.png)
 
