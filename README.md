@@ -23,13 +23,27 @@ Enter the code for admin.py and models.py
 Execute Django admin and create details for 10 books
 
 ## PROGRAM
+admin.py
+from django.contrib import admin
+from .models import game
+admin.site.register(game)
 
-Include your code here
+models.py
+
+from django.db import models
+
+class game(models.Model):
+    gameid = models.IntegerField()
+    gamename= models.CharField(max_length=20)
+    gamelevel = models.CharField(max_length=20)
+    gamescore = models.CharField(max_length=20)
+
 
 ## OUTPUT
 
-Include the screenshot of your admin page.
-
+![output](./web map.png)
+![output](./web.png)
+![output](./web1.png)
 
 ## RESULT
 Thus the program for creating a database using ORM hass been executed successfully
