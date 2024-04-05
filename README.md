@@ -25,9 +25,13 @@ Execute Django admin and create details for 10 books
 ## PROGRAM
 '''
 admin.py
+
 from django.contrib import admin
+
 from .models import game
+
 admin.site.register(game)
+
 
 models.py
 
@@ -35,9 +39,13 @@ from django.db import models
 
 class game(models.Model):
     gameid = models.IntegerField()
+
     gamename= models.CharField(max_length=20)
+
     gamelevel = models.CharField(max_length=20)
+
     gamescore = models.CharField(max_length=20)
+    
 '''
 
 ## OUTPUT
